@@ -1,0 +1,55 @@
+{
+  "name": "protestant-churches-ai-mcp",
+  "version": "1.0.0",
+  "description": "Protestant Churches AI Model Context Protocol Server for Autonomous Sola Scriptura Exegesis, Priesthood of All Believers, Congregational Freedom & Reformed Covenant Protocol",
+  "tools": [
+    {
+      "name": "audit_scriptural_exegesis",
+      "description": "Cross-examine theological propositions against the canon of Scripture and historical Protestant confessions to verify hermeneutical fidelity",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "scripture_passage": {
+            "type": "string"
+          },
+          "theological_claim": {
+            "type": "string"
+          },
+          "historical_confession": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "scripture_passage",
+          "theological_claim"
+        ]
+      }
+    },
+    {
+      "name": "disburse_congregational_mission_grant",
+      "description": "Trigger automated micro-escrow releases for community food pantries, missionary clinics, disaster reconstruction, and open-source biblical literacy tools",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string"
+          },
+          "recipient": {
+            "type": "string"
+          },
+          "amount_wei": {
+            "type": "string"
+          },
+          "proof_hash": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "category",
+          "recipient",
+          "amount_wei"
+        ]
+      }
+    }
+  ]
+}
